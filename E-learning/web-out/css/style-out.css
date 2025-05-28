@@ -1,0 +1,1027 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+  --violet:#758fe4;
+  --pink:#a628c2;
+  --gradient:linear-gradient(90deg, var(--violet), var(--pink));
+}
+
+*{ 
+  font-family: 'Nunito', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  text-transform: none;
+  transition: all .2s ease-out;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+  width:1rem;
+}
+
+html::-webkit-scrollbar-track{
+  background:#333;
+}
+
+html::-webkit-scrollbar-thumb{
+  background:#fff;
+  border-radius: 5rem;
+}
+
+body{
+  background:var(--gradient);
+  padding:3rem 7%;
+}
+
+section{
+  padding:2rem 7%;
+}
+
+.container{
+  background:#fff;
+  border-radius: .5rem;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+}
+
+.heading{
+  color:transparent;
+  background:var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  padding:0 1rem;
+  padding-top: 2.5rem;
+  text-align: center;
+  font-size: 4rem;
+  text-transform: uppercase;
+  width: 90rem; /* Đặt độ rộng cố định là 90rem */
+  margin: 0 auto; /* Căn giữa phần tử */
+}
+
+.btn{
+  display: inline-block;
+  margin-top: 1rem;
+  padding:.8rem 3rem;
+  border-radius: .5rem;
+  background:#333;
+  color:#fff;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.btn:hover{
+  background:var(--gradient);
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding:2rem 7%;
+  border-bottom: .1rem solid rgba(0,0,0,.1);
+  position: relative;
+  z-index: 1000;
+}
+
+header .logo{
+  font-size: 2.5rem;
+  color:var(--violet);
+  font-weight: bold;
+}
+
+header .logo span{
+  color:var(--pink);
+}
+
+header .navbar a{
+  margin-left: 2rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color:#333;
+}
+
+header .navbar a:hover{
+  color:var(--pink);
+}
+
+#menu{
+  font-size: 2.5rem;
+  padding:.5rem 1rem;
+  border-radius: .3rem;
+  border:.1rem solid rgba(0,0,0,.2);
+  cursor: pointer;
+  display: none;
+}
+
+/************************************************** HOME *********************************************/
+.home{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+  align-items: center;
+}
+
+.home .content{
+  flex:1 1 40rem;
+}
+
+.home .title{
+  flex:1 1 80rem;
+  align-items: center;
+}
+
+.home .image{
+  flex:1 1 40rem;
+}
+
+.home .image1{
+  flex:1 1 30rem;
+  margin-right: 4rem;
+  margin-left: 4rem;
+}
+
+.home .image img{
+  border-radius: 80%;
+  width:90%;
+}
+
+.home .image1 img{
+  border-radius: 10%;
+  width:100%;
+}
+
+.home .content h3{
+  color:transparent;
+  background:var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 4rem;
+}
+
+.home .content h4{
+  color:transparent;
+  background:var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 3rem;
+}
+
+.home .content p{
+  padding:.5rem 0;
+  font-size: 1.7rem;
+  color:#666;
+  text-align: justify;
+}
+
+.home .title h3{
+  color:transparent;
+  background:var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 5rem;
+  text-align: center;
+}
+
+/******************************************* COURSE ********************************************/
+.course{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+}
+
+.course .box{
+  flex:1 1 45rem;
+  border-radius: .5rem;
+  border:.1rem solid rgba(0,0,0,.1);
+  padding:1rem;
+  position: relative;
+}
+
+.course .box img {
+  height: 30rem; /* Chỉnh chiều cao theo ý muốn, ví dụ: 30rem */
+  width: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều rộng của box */
+  object-fit: cover; /* Đảm bảo ảnh không bị méo và vừa khung */
+  border-radius: 10px; /* Tùy chọn: Bo góc ảnh */
+}
+
+.course .box .amount{
+  position: absolute;
+  top:1rem; left:1rem;
+  font-size: 2rem;
+  padding:.5rem 1rem;
+  background:var(--pink);
+  color:#fff;
+  border-radius: .5rem;
+}
+
+.course .box .stars i{
+  color:var(--violet);
+  font-size: 1.5rem;
+  padding:1rem 0;
+}
+
+.course .box h3{
+  color:var(--blue);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+
+}
+
+.course .box h4{
+  color:var(--pink);
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.course .box p{
+  color:#666;
+  font-size: 1.5rem;
+  padding:.5rem 0;
+}
+
+.course .icons{
+  display: flex;
+  justify-content: space-between;
+  border-top: .1rem solid rgba(0,0,0,.1);
+  margin-top: 1rem;
+  padding:.5rem;
+  padding-top: 1rem;
+}
+
+.course .icons p{
+  color:#666;
+  font-size: 1.3rem;
+}
+
+.course .icons p i{
+  font-size: 1.8rem;
+  padding-right: .4rem;
+  color:var(--pink);
+}
+.course .box .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem; /* Kích thước nút */
+  font-size: 1.4rem;
+  background: var(--pink); /* Màu nền hồng */
+  color: #fff; /* Màu chữ trắng */
+  border: none;
+  border-radius: 5px; /* Bo góc nút */
+  cursor: pointer;
+  text-align: left; /* Căn lề trái */
+  transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu */
+}
+
+.course .box .btn:hover {
+  background: var(--violet); /* Màu nền xanh khi hover */
+}
+
+.course .title{
+    color:transparent;
+    background:var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    padding:0 1rem;
+    padding-top: 2.5rem;
+    text-align: center;
+    font-size: 4rem;
+    text-transform: uppercase;
+    width: 90rem; /* Đặt độ rộng cố định là 90rem */
+    margin: 0 auto; /* Căn giữa phần tử */
+}
+/************************************************* COURSCES ***************************************/
+.playlist-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.playlist-box {
+  width: 30rem;
+  max-width: 100%;
+  overflow: hidden; /* Ngăn nội dung tràn ra */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.playlist-box img {
+  display: block;
+  width: 100%;         /* Ảnh chiếm hết chiều ngang của box */
+  height: 180px;        /* Đặt chiều cao cụ thể để tránh ảnh dài */
+  object-fit: cover;    /* Cắt ảnh vừa khung */
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.playlist-box h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+.playlist-box h4 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+.playlist-box p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+.playlist-box .tutor-id {
+  font-size: 0.9rem;
+  color: #999;
+  margin-bottom: 0.5rem;
+}
+
+/************************************************** TEACHER *************************************/
+.teacher{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+}
+
+.teacher .box{
+  flex:1 1 45rem;
+  border:.1rem solid rgba(0,0,0,.1);
+  border-radius:.5rem;
+  padding:1.5rem;
+  text-align: center;
+}
+
+.teacher .box img{
+  height: 10rem;
+  width:10rem;
+  margin:.5rem 0;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.teacher .box h3{
+  color:var(--violet);
+  font-size: 2.5rem;
+}
+
+.teacher .box span{
+  color:var(--pink);
+  font-size: 2rem;
+}
+
+.teacher .box p{
+  color:#666;
+  font-size: 1.5rem;
+  padding:1rem 0;
+}
+
+.teacher .box .share a{
+  height:4rem;
+  width:4rem;
+  line-height: 4rem;
+  font-size: 2rem;
+  background:var(--pink);
+  border-radius: .5rem;
+  margin:.3rem;
+  color:#fff;
+}
+
+.teacher .box .share a:hover{
+  background:var(--violet);
+}
+
+.teacher .box .classes {
+  margin-top: 1.5rem;
+  text-align: left;
+}
+
+.teacher .box .classes h4 {
+  font-size: 1.8rem;
+  color: var(--violet);
+  margin-bottom: 1rem;
+}
+
+.teacher .box .classes .class-box {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  color: #ffffff;
+  background-color: #b23cba; /* Màu nền nhạt */
+  border: 1px solid #dedfe2; /* Viền xám nhạt */
+  border-radius: 5px; /* Bo tròn góc */
+  margin: 0.5rem 0.5rem 0 0; /* Khoảng cách giữa các ô */
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.716); /* Hiệu ứng đổ bóng */
+  cursor: default;
+  text-align: center;
+}
+
+.teacher .box .classes .class-box:hover {
+  background-color: #5c51d3; /* Màu nền khi hover */
+  border-color: #ffffff; /* Đổi màu viền khi hover */
+}
+/***************************************** REVIEW ***********************************************/
+
+.review{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+}
+
+.review .box{
+  border-radius: .5rem;
+  border:.1rem solid rgba(0,0,0,.1);
+  padding:1rem;
+  flex:1 1 40%;
+}
+
+.review .box .student{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.review .box .student .student-info{
+  display: flex;
+  align-items: center;
+}
+
+.review .box .student i{
+  font-size: 4rem;
+  color:var(--pink);
+  opacity: .5;
+}
+
+.review .box .student .student-info img{
+  border-radius: 50%;
+  object-fit: cover;
+  height: 15rem;
+  width: 15rem;
+  margin-right: 1.5rem;
+}
+
+.review .box .student .student-info h2{
+  font-size: 1.5rem;
+  color:#141414;
+}
+
+.review .box .student .student-info h3{
+  font-size: 3rem;
+  color:#333;
+}
+
+.review .box .student .student-info span{
+  font-size: 2rem;
+  color:var(--pink);
+}
+
+.review .box .text{
+  padding:2rem 0;
+  font-size: 1.6rem;
+  color:#666;
+}
+
+/******************************************* CONTACT ************************************/
+.contact{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+}
+
+.contact .image{
+  flex:1 1 35rem;
+}
+
+.contact .image img{
+  width:100%;
+}
+
+.contact form{
+  flex:1 1 50rem;
+  border:.1rem solid rgba(0,0,0,.1);
+  border-radius: .5rem;
+  padding:2rem;
+}
+
+.contact form .inputBox{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .inputBox input,
+.contact form .box, 
+.contact form textarea{
+  width: 100%;
+  padding:1rem;
+  margin:.7rem 0;
+  font-size: 1.7rem;
+  border:.1rem solid rgba(0,0,0,.1);
+  border-radius: .5rem;
+  text-transform: none;
+  color:#333;
+} 
+
+.contact form .inputBox input:focus,
+.contact form .box:focus, 
+.contact form textarea:focus{
+  border-color: var(--pink);
+}
+
+.contact form .inputBox input{
+  width:49%;
+}
+
+.contact form textarea{
+  height: 20rem;
+  resize: none;
+}
+
+/************************************** LOGIN / REGISTER**************************************/
+.login-register {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+
+.login-register .image img {
+  flex: 1 1 40rem;
+  width: 80%;
+  max-width: 500px;
+}
+
+.login-register .form-container {
+  flex: 1 1 40rem;
+  max-width: 400px;
+  width: 100%;
+  background: #fff;
+  padding: 3rem;
+ /* border-radius: 1rem;*/
+  border: 2px solid #dad9d9; /* Màu viền xám nhạt */
+  border-radius: 10px; /* Bo tròn các góc */
+  box-shadow: 0 4px 8px rgba(102, 101, 101, 0.1); /* Hiệu ứng đổ bóng */
+  background-color: #fff; /* Màu nền trắng */
+}
+
+.login-register .form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+
+.login-register .form-container form input {
+  padding: 1rem;
+  font-size: 1.6rem;
+  border-radius: .5rem;
+  border: .1rem solid #ccc;
+}
+.login-register .form-container .error-message {
+  color: red; /* Màu chữ đỏ để nổi bật */
+  font-size: 1.4rem; /* Kích thước chữ vừa phải */
+  margin: 1rem 0; /* Khoảng cách trên và dưới */
+  text-align: center; /* Căn giữa thông báo */
+  font-weight: bold; /* Làm chữ đậm */
+}
+.login-register .form-container form .btn {
+  background: var(--violet);
+  color: #fff;
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 1.8rem;
+  border-radius: .5rem;
+}
+
+.login-register .form-container form .btn:hover {
+  background: var(--pink);
+}
+
+.login-register .form-container form p {
+  text-align: center;
+}
+
+.login-register .form-container form a {
+  color: var(--violet);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.login-register .button-container {
+  text-align: center; /* Căn giữa nút Admin */
+  margin-top: 2rem; /* Khoảng cách phía trên */
+}
+/******************************************* CLASS **********************************************/
+.class{ 
+  display: flex; 
+  flex-wrap: wrap; 
+  gap:1.5rem; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+.class .image1 { 
+  flex:1 1 90rem; 
+  align-items: center; 
+}
+
+.class .image2 { 
+  flex:1 1 20rem; 
+  align-items: flex-start;
+  max-width: 400px;
+}
+
+.class .title { 
+  flex: 1 1 80rem; 
+}
+
+.class .content{ 
+  flex: 1 1 90rem; 
+  text-align: left; 
+  display: flex; 
+  flex-direction: column;  
+}
+
+.class .text{ 
+  flex: 1 1 30rem; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: flex-start;
+  flex-grow: 1;
+}
+
+.teacher-info {
+  display: flex; /* Sắp xếp các phần tử theo hàng ngang */
+  align-items: flex-start; /* Căn mép trên của ảnh và text ngang nhau */
+  justify-content: center;
+  gap: 3rem; /* Khoảng cách giữa ảnh và text */
+  margin-top: 2rem; /* Khoảng cách phía trên */
+}
+
+.teacher-info .image2 {
+  flex: 0 0 30%; /* Ảnh chiếm 30% chiều rộng */
+  max-width: 30%; /* Đảm bảo không vượt quá 30% */
+}
+
+.teacher-info .image2 img {
+  width: 100%; /* Ảnh chiếm toàn bộ chiều rộng của container */
+  height: auto; /* Giữ tỷ lệ ảnh */
+  display: block;
+}
+
+.teacher-info .text {
+  flex: 0 0 55%; /* Text chiếm 60% chiều rộng */
+  max-width: 60%; /* Đảm bảo không vượt quá 60% */
+  display: flex;
+  flex-direction: column; /* Sắp xếp các đoạn văn theo chiều dọc */
+  justify-content: flex-start; /* Căn nội dung text từ mép trên */
+}
+
+.class .video-list {
+  list-style-type: none; /* Đánh dấu các mục bằng dấu chấm */
+  /* Thêm khoảng cách lề trái cho danh sách */
+  color: #666;
+  font-size: 1.6rem;
+  padding-left: 26rem;
+}
+
+.class .video-list li {
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+}
+
+.class .video-list > li > strong {
+  font-size: 1.5rem;
+  color: #454444; /* Màu sắc nổi bật cho tiêu đề mục lớn */
+}
+
+.class .video-list ul {
+  list-style-type: disc; /* Dấu chấm cho danh sách con */
+  margin-left: 2rem; /* Thụt lề cho danh sách con */
+  padding-left: 8rem;
+}
+
+.class .video-list ul li {
+  margin-bottom: 0.5rem; /* Khoảng cách giữa các mục nhỏ */
+  line-height: 1.8rem;
+}
+
+.class .image1 img{ 
+  border-radius: 5%; 
+  width:100%; 
+  height: auto;
+  display: block;
+}
+
+.class .image2 img{ 
+  border-radius: 20%; 
+  width: 100%; 
+  height: auto;
+  display: block;
+}
+
+.class .content h3{ 
+  color:transparent; 
+  background:var(--gradient); 
+  -webkit-background-clip: text; 
+  background-clip: text; 
+  font-size: 4rem; 
+  text-align: center; 
+  padding-bottom: 2rem;
+}
+.class .content h4 {
+  padding:.5rem 0; 
+  padding-left: 10rem;  
+  font-size: 1.7rem; 
+  color:#666; 
+  text-align: left; 
+  line-height: 2rem; 
+  display: flex; 
+  align-items: center; 
+  margin-top: 1rem;
+}
+
+
+.class .content p{ 
+  padding:.5rem 0; 
+  padding-left: 10rem;  
+  font-size: 1.7rem; 
+  color:#666; 
+  text-align: left; 
+  line-height: 2rem; 
+  display: flex; 
+  align-items: center; 
+}
+
+.class .content .label { 
+  font-weight: bold; 
+  min-width: 150px; 
+  text-align: left; 
+}
+
+.class .content .value { 
+  margin-left: 1rem; 
+}
+
+.teacher-info .text p {
+  display: flex; /* Sử dụng Flexbox để căn chỉnh */
+  align-items: flex-start; /* Căn chữ đậm và chữ thường theo hàng trên cùng */
+  gap: 1rem; /* Khoảng cách cố định giữa chữ đậm và chữ thường */
+  padding: 0.5rem 0; /* Khoảng cách giữa các dòng */
+  font-size: 1.7rem;
+  color: #666;
+}
+
+.teacher-info .text .label {
+  font-weight: bold;
+  min-width: 150px; /* Đặt chiều rộng cố định cho chữ đậm */
+  text-align: left;
+  flex-shrink: 0; /* Ngăn chữ đậm bị thu nhỏ */
+}
+
+.teacher-info .text .value {
+  flex-grow: 1; /* Cho phép chữ thường chiếm không gian còn lại */
+  text-align: left;
+  word-wrap: break-word; /* Đảm bảo chữ thường xuống dòng nếu quá dài */
+}
+
+.button-container { 
+  flex: 1 1 70rem;
+  text-align: center; 
+  margin-top: 2rem; 
+}
+
+.navigation-arrows { 
+  display: flex; 
+  justify-content: space-between; 
+  width: 100%; 
+  max-width: 1200px; 
+  margin-top: 3rem; 
+}
+
+.navigation-arrows a { 
+  text-decoration: none; 
+  font-size: 1.8rem; 
+  font-weight: bold; 
+  color: #387cc6; 
+  padding: 0.5rem 1rem; 
+  border: 2px solid #387cc6; 
+  border-radius: 5px; 
+  transition: 0.3s; 
+}
+
+.navigation-arrows a:hover { 
+  background: #1a5dd2; 
+  color: #ffffff; 
+}
+
+/***********************pay-ment*****************************/
+.payment-section {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-container {
+  display: flex;
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.qr-code {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qr-code .qr-image {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.payment-instructions {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.payment-instructions h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.payment-instructions p {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.payment-instructions .amount {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #d432ed;
+}
+
+.payment-instructions .transaction-content {
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+}
+
+.footer .box-container .box{
+  flex:1 1 20rem;
+}
+
+.footer .box-container .box h3{
+  font-size: 2.5rem;
+  color:var(--violet);
+  padding:.7rem 0;
+}
+
+.footer .box-container .box p{
+  font-size: 1.5rem;
+  color:#666;
+  padding:.7rem 0;
+}
+
+.footer .box-container .box a{
+  display: block;
+  font-size: 1.5rem;
+  color:#666;
+  padding:.7rem 0;
+}
+
+.footer .box-container .box a:hover{
+  color:var(--pink);
+}
+
+.footer .box-container .box p i{
+  padding-right: .5rem;
+  color:var(--pink);
+}
+
+.footer .credit{
+  font-size: 2rem;
+  margin-top: 1rem;
+  padding:1rem;
+  padding-top: 2rem;
+  text-align: center;
+  border-top: .1rem solid rgba(0,0,0,.1);
+  color:#666;
+}
+
+.footer .credit span{
+  color:var(--pink);
+}
+
+
+
+/* media queries  */
+
+@media (max-width:991px){
+
+  html{
+    font-size: 55%;
+  }
+
+  body{
+    padding:1.5rem;
+  }
+
+  header{
+    padding:2rem;
+  }
+
+  section{
+    padding:2rem;
+  }
+
+}
+
+@media (max-width:768px){
+
+  #menu{
+    display: initial;
+  }
+
+  header .navbar{
+    position: absolute;
+    top:100%; left:0; right:0;
+    background:#fff;
+    border-top: .1rem solid rgba(0,0,0,.2);
+    border-bottom: .1rem solid rgba(0,0,0,.2);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  header .navbar.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  header .navbar a{
+    font-size: 2.5rem;
+    display: block;
+    margin:2rem 0;
+    text-align:center;
+  }
+
+  .contact form .inputBox input{
+    width:100%;
+  }
+
+}
+
+@media (max-width:400px){
+
+  html{
+    font-size: 50%;
+  }
+
+} 
+
